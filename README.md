@@ -60,6 +60,7 @@ For now, Repo is private, these will all states Repo Not Found.<br/>
 <!-- ABOUT THE PROJECT -->
 ## About SwitchWinForms
 
+Everything shown in the demo below is drawn by Graphic library from the Form's Paint Event, not a component.  The form itself is invisible with everything drawn on it to give more rounded corners and flexibility.  All code controlling this is within the SiwtchWinForms.dll code in this project. No dependencies outside of .NET Framework and Visual Studio itself.
 [![SwitchWinForms][product-screenshot]][switchwinforms-git-root]
 
 This is a library that hides the form, then draws everything you see on the screen.  
@@ -100,14 +101,14 @@ Visual Studio 2019+ and .NET Framework 4.8+.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This project can be modified by anyone using Git Flow as long as all changes are pulled back into this project.  You can fork if you like, but consider pulling suggestions back into our develop group.
+This project can be modified by anyone using Git Flow if all changes are pulled back into this project.  You can fork if you like but consider pulling suggestions back into our develop group.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!

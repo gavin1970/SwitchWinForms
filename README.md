@@ -60,7 +60,8 @@ For now, Repo is private, these will all states Repo Not Found.<br/>
 <!-- ABOUT THE PROJECT -->
 ## About SwitchWinForms
 
-Everything shown in the demo below is drawn by Graphic library from the Form's Paint Event, not a component.  The form itself is invisible with everything drawn on it to give more rounded corners and flexibility.  All code controlling this is within the SiwtchWinForms.dll code in this project. No dependencies outside of .NET Framework and Visual Studio itself.
+Everything shown in the demo below is drawn by Graphic library from the Form's Paint Event, not a component.  The form itself is invisible with everything drawn on it to give more rounded corners and flexibility.  All code controlling this is within the SiwtchWinForms.dll code in this project. No dependencies outside of .NET Framework and Visual Studio itself.<br/>
+
 [![SwitchWinForms][product-screenshot]][switchwinforms-git-root]
 
 This is a library that hides the form, then draws everything you see on the screen.  
@@ -101,7 +102,7 @@ Visual Studio 2019+ and .NET Framework 4.8+.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This project can be modified by anyone using Git Flow if all changes are pulled back into this project.  You can fork if you like but consider pulling suggestions back into our develop group.
+This graphics library can be modified by anyone using Git Flow if all changes are pulled back into this project.  If you fork consider pulling back into this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +116,7 @@ Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/YourFeature`)
-3. Commit your Changes (`git commit -m 'Add some YourFeature'`)
+3. Commit your Changes (`git commit -m 'Add some comments about your feature'`)
 4. Push to the Branch (`git push origin feature/YourFeature`)
 5. Open a Pull Request back to this project.
 

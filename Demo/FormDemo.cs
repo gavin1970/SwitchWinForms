@@ -60,7 +60,8 @@ namespace Demo
                     BackgroundImage = (Image)SWFBoxing.ImageFromFile<Image>(@"imgs\test.png"),
                     BackgroundImageLayout = SWF_BG_IMG_LAYOUT.Stretch,
                     ReplaceImageColor = new List<ReplaceColor>() {
-                        new ReplaceColor(Color.FromArgb(104, 104, 25), Color.Transparent, 100),
+                        new ReplaceColor(Color.FromArgb(27, 157, 44), Color.Transparent, 100),
+                        new ReplaceColor(Color.FromArgb(159, 215, 90), Color.Transparent, 50),
                         new ReplaceColor(Color.White, Color.Transparent, 90)
                     },
                     Color = Color.Black,
@@ -98,17 +99,17 @@ namespace Demo
                 Type = SWF_BOX_TYPE.Button,
                 Shadowing = new ShadowingSetup()
                 {
-                    Visibilty = SWF_TRANSPARENT_PERCENTAGE.Ten,
+                    Visibilty = SWF_TRANSPARENT_PERCENTAGE.Twenty,
                     Color = Color.Black,
-                    Depth = 5
+                    Depth = 7
                 },
                 TextSetup = new TextUtil.TextOptions()
                 {
                     BackgroundImage = (Image)SWFBoxing.ImageFromFile<Image>(@"imgs\test.png"),
                     BackgroundImageLayout = SWF_BG_IMG_LAYOUT.Tile,
                     ReplaceImageColor = new List<ReplaceColor>() {
-                                            new ReplaceColor(Color.FromArgb(251, 188, 9), Color.Transparent, 90),
-                                            new ReplaceColor(Color.FromArgb(104, 104, 25), Color.Transparent) },
+                                            new ReplaceColor(Color.FromArgb(247, 172, 8), Color.Transparent, 100),      //solid color
+                                            new ReplaceColor(Color.FromArgb(255, 255, 111), Color.Transparent, 50) },   //border around color
                     Color = Color.Black,
                     Text = "Click Tiled Button",
                     Font = new Font("Verdana", 10, FontStyle.Bold, GraphicsUnit.Pixel),
@@ -168,6 +169,7 @@ namespace Demo
                 },
             });
 
+            //show any exceptions throw by input here.
             _txtInput.Exception += (sender, e) =>
             {
                 lock (_txtInput.BoxingOptions.TextSetup)
@@ -181,6 +183,7 @@ namespace Demo
                 }
             };
 
+            //show success messages here.
             _txtInput.Success += (sender, e) =>
             {
                 lock (_txtInput.BoxingOptions.TextSetup)
@@ -210,8 +213,11 @@ namespace Demo
             _lblDisplay.BoxingOptions.Location = new Point(brd, h - 40);
             _lblDisplay.BoxingOptions.Size = new Size(w - (brd * 2), 30);
 
-            _txtInput.BoxingOptions.Location = new Point(brd, _lblDisplay.BoxingOptions.Location.Y - 40);
-            _txtInput.BoxingOptions.Size = _lblDisplay.BoxingOptions.Size;
+            if (_lblDisplay.BoxingOptions.Location.Y - 40 > _tbOptions.Height)
+            {
+                _txtInput.BoxingOptions.Location = new Point(brd, _lblDisplay.BoxingOptions.Location.Y - 40);
+                _txtInput.BoxingOptions.Size = _lblDisplay.BoxingOptions.Size;
+            }
         }
         protected override void WndProc(ref Message m)
         {

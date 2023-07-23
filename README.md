@@ -99,13 +99,6 @@ Visual Studio 2019+ and .NET Framework 4.8+.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-This graphics library can be modified by anyone using Git Flow if all changes are pulled back into this project.  If you fork consider pulling back into this project.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -126,7 +119,8 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License.<br/>
+See [LICENSE.txt][license-url] for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

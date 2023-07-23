@@ -72,15 +72,15 @@ There is still some work needed with input boxes and background images in button
 
 
 ### Built With
-* [![.NET Framework][.net.framework]][.net.framework-url]
-* [![Visual Studio][visual-studio]][visual-studio-url]
+[![Visual Studio][visual-studio]][visual-studio-url]<br/>
+[![.NET Framework][.net.framework]][.net.framework-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is all written in Visual Studio 2022, download, build and run.  No external dependencies added.
+This is all written in Visual Studio 2019 orignally and in 2022 now.  Clone, build, and run.  No external dependencies added outside of this project.
 
 ### Prerequisites
 
@@ -122,7 +122,6 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- LICENSE -->
 ## License
 
@@ -146,10 +145,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/SwitchWinForms.gif
-[.net.framework]: https://img.shields.io/badge/dotnet%20version-net4.8-blue
-[.net.framework-url]: https://dotnet.microsoft.com/en-us/download/dotnet-framework
-[visual-studio]: https://img.shields.io/badge/visualstudio%20version-2022-blue
+[visual-studio]: https://img.shields.io/badge/visualstudio-2022-blue+?style=for-the-badge&logo=visualstudio
 [visual-studio-url]: https://visualstudio.microsoft.com/vs/
+[.net.framework]: https://img.shields.io/badge/.net%20framework-net4.8-blue?style=for-the-badge&logo=dotnet
+[.net.framework-url]: https://dotnet.microsoft.com/en-us/download/dotnet-framework
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB

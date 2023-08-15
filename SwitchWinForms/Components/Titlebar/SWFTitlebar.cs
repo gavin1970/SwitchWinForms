@@ -21,10 +21,11 @@ namespace SwitchWinForms
 
             if (frm.FormBorderStyle != FormBorderStyle.None)
                 frm.FormBorderStyle = FormBorderStyle.None;
-            
+
             //Ensure doublebuffered set on form.
-            //This stops major flickering.
-            SetDoubleBuffered(frm);
+            //If successful, this will stop major flickering.
+            if (!Global.SetDoubleBuffered(frm, out Exception exc))
+                SetLastError = exc;
 
             frm.BackColor = Color.FromArgb(192, 0, 191);
             frm.TransparencyKey = frm.BackColor;
@@ -193,36 +194,6 @@ namespace SwitchWinForms
         #endregion
 
         #region Private Methods
-        private bool SetDoubleBuffered(Form frm)
-        {
-            bool retVal = false;
-            if (SystemInformation.TerminalServerSession)
-            {
-                SetLastError = new Exception("## WARN ##, Flicking may occur, because your in a terminal session.");
-                return retVal;
-            }
-
-            if (frm != null)
-            {
-                try
-                {
-                    PropertyInfo aProp =
-                        typeof(Control).GetProperty("DoubleBuffered",
-                            BindingFlags.NonPublic | BindingFlags.Instance);
-
-                    aProp.SetValue(frm, true, null);
-                    retVal = true;
-                }
-                catch (Exception ex)
-                {
-                    SetLastError = ex;
-                }
-            }
-            else
-                SetLastError = new Exception("## WARN ##, Missing Form object.");
-
-            return retVal;
-        }
         private void CreateButtons(Graphics g, BoxInfo boxInfo)
         {
             int buttonPadding = 2;

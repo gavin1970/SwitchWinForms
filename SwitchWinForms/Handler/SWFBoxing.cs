@@ -67,42 +67,34 @@ namespace SwitchWinForms
         #endregion
 
         #region Public Properties
-
         /// <summary>
         /// All setup options for the object your creating.  Can be passed in with Constructor or this property.
         /// </summary>
         public SWFBoxingOptions BoxingOptions { get { return SetBoxOptions; } }
-
         /// <summary>
         /// Get bounderies for this object.
         /// </summary>
         public Rectangle Rectangle { get { return BoxingLoc; } }
-
         /// <summary>
         /// Get location for this object.
         /// </summary>
         public Point Location { get { return BoxingLoc.Location; } }
-
         /// <summary>
         /// Get size for this object.
         /// </summary>
         public Size Size { get { return BoxingLoc.Size; } }
-
         /// <summary>
         /// Get left boundary for this object.
         /// </summary>
         public int Left { get { return BoxingLoc.X; } }
-
         /// <summary>
         /// Get top boundary for this object.
         /// </summary>
         public int Top { get { return BoxingLoc.Y; } }
-
         /// <summary>
         /// Get right boundary for this object.
         /// </summary>
         public int Right { get { return BoxingLoc.X + BoxingLoc.Width; } }
-
         /// <summary>
         /// Get bottom boundary for this object.
         /// </summary>

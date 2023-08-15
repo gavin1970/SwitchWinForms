@@ -47,11 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\Menu\SWFMenubarOptions.cs" />
+    <Compile Include="Components\Menu\SWFMenuItem.cs" />
     <Compile Include="Handler\SWFBoxing.cs" />
-    <Compile Include="Handler\SWFTitlebar.cs" />
-    <Compile Include="Helper\BoxMethods.cs" />
-    <Compile Include="Models\BoxInfo.cs" />
-    <Compile Include="Models\ReplaceColor.cs" />
+    <Compile Include="Components\Menu\SWFMenuBar.cs" />
+    <Compile Include="Components\Titlebar\SWFTitlebar.cs" />
+    <Compile Include="Components\Common\BoxMethods.cs" />
+    <Compile Include="Components\Common\BoxInfo.cs" />
+    <Compile Include="Utils\ReplaceColor.cs" />
     <Compile Include="Models\ShadowingSetup.cs" />
     <Compile Include="Models\SWFMessageEventArgs.cs" />
     <Compile Include="Models\TextUtil.cs" />
@@ -60,11 +63,14 @@
     <Compile Include="Models\SWFTitlebarOptions.cs" />
     <Compile Include="Models\SWFUnicodeChars.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Static\Constants.cs" />
-    <Compile Include="Static\Global.cs" />
+    <Compile Include="Utils\Constants.cs" />
+    <Compile Include="Utils\Global.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="SwitchWinForms.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\Button\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

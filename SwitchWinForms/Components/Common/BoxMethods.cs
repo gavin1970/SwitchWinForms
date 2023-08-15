@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SwitchWinForms.Models;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Security.Permissions;
@@ -9,6 +10,7 @@ namespace SwitchWinForms
     public abstract class BoxMethods
     {
         private static SWFTitlebarOptions _titleOptions = null;
+        private static SWFMenubarOptions _menuOptions = null;
 
         const int cursorFormEdge = 5;
         const int WM_NCHITTEST = 0x0084;
@@ -103,6 +105,16 @@ namespace SwitchWinForms
                 _titleOptions = value;
                 if (TitleOptions.Parent != null && !string.IsNullOrWhiteSpace(TitleOptions.TextSetup?.Text))
                     TitleOptions.Parent.Text = TitleOptions.TextSetup.Text;
+            }
+        }
+        public static SWFMenubarOptions MenuOptions
+        {
+            get { return _menuOptions; }
+            set
+            {
+                _menuOptions = value;
+                //if (MenuOptions.Parent != null && !string.IsNullOrWhiteSpace(MenuOptions.TextSetup?.Text))
+                //    MenuOptions.Parent.Text = MenuOptions.TextSetup.Text;
             }
         }
         public Exception LastError { get { return SetLastError; } }

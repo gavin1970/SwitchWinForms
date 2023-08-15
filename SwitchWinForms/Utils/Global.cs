@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -13,8 +14,12 @@ namespace SwitchWinForms
     {
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         extern static bool DestroyIcon(IntPtr handle);
-        
+
         private const string DefaultTextFont = "Courier New";
+        private static readonly object _thLock = new object();
+
+        internal static bool IsDoubleBuffered { get; private set; } = false;
+
         internal static List<Keys> IgnoreKeys { get; } = new List<Keys>() { Keys.Right, Keys.Left, Keys.Home, Keys.End,
                                                                     Keys.Enter, Keys.Return, Keys.Back, Keys.Delete, 
                                                                     Keys.Escape, Keys.Shift, Keys.ShiftKey, Keys.Capital, 
@@ -371,6 +376,45 @@ namespace SwitchWinForms
             }
 
             return retVal;
+        }
+        internal static bool SetDoubleBuffered(Form frm, out Exception exc)
+        {
+            //default
+            exc = null;
+
+            lock (_thLock)
+            {
+                //save processing
+                if (IsDoubleBuffered)
+                    return IsDoubleBuffered;
+
+                if (frm != null)
+                {
+                    if (SystemInformation.TerminalServerSession)
+                    {
+                        exc = new Exception("## WARN ##, Flicking may occur, because your in a terminal session.");
+                        return IsDoubleBuffered;
+                    }
+
+                    try
+                    {
+                        PropertyInfo aProp =
+                            typeof(Control).GetProperty("DoubleBuffered",
+                                BindingFlags.NonPublic | BindingFlags.Instance);
+
+                        aProp.SetValue(frm, true, null);
+                        IsDoubleBuffered = true;
+                    }
+                    catch (Exception ex)
+                    {
+                        exc = ex;
+                    }
+                }
+                else
+                    exc = new Exception("## WARN ##, Missing Form object.");
+            }
+
+            return IsDoubleBuffered;
         }
         private static GraphicsPath RoundedRect(Rectangle bounds, BoxInfo boxInfo)
         {

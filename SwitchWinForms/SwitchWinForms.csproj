@@ -71,6 +71,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\Button\" />
+    <Folder Include="Components\Form\" />
+    <Folder Include="Components\Listview\" />
+    <Folder Include="Components\MessageBox\" />
+    <Folder Include="Components\Textbox\" />
+    <Folder Include="Components\Treeview\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -27,7 +27,7 @@ namespace SwitchWinForms
             if (!Global.SetDoubleBuffered(frm, out Exception exc))
                 SetLastError = exc;
 
-            frm.BackColor = Color.FromArgb(192, 0, 191);
+            frm.BackColor = Color.FromArgb(255, 192, 255, 191); //blue is down by one, only to ensure it doesn't match most auto colors.
             frm.TransparencyKey = frm.BackColor;
 
             if (frm.MinimumSize.Width == 0 &&

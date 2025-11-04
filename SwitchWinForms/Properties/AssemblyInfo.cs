@@ -10,8 +10,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("chizl.com")]
 [assembly: AssemblyProduct("SwitchWinForms")]
-[assembly: AssemblyCopyright("copyright (c) chizl.com 2025")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("© 2025 chizl.com")]
+[assembly: AssemblyTrademark("chizl.com ™")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -32,6 +32,8 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.1.0.0")]
-[assembly: AssemblyFileVersion("2.1.1.2")]
-[assembly: AssemblyInformationalVersion("2.1.0.0")]
+[assembly: AssemblyVersion("5.11.0.0")]
+[assembly: AssemblyFileVersion("5.11.4.790")]
+[assembly: AssemblyInformationalVersion("5.11.4.0")]
+[assembly: AssemblyKeyFileAttribute("")]
+[assembly: AssemblyDelaySignAttribute(false)]

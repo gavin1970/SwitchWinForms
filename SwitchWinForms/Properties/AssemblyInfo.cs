@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("chizl.com")]
 [assembly: AssemblyProduct("SwitchWinForms")]
-[assembly: AssemblyCopyright("copyright (c) chizl.com 2023")]
+[assembly: AssemblyCopyright("copyright (c) chizl.com 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,5 +33,5 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("2.1.0.0")]
-[assembly: AssemblyFileVersion("2.1.0.319")]
+[assembly: AssemblyFileVersion("2.1.1.2")]
 [assembly: AssemblyInformationalVersion("2.1.0.0")]

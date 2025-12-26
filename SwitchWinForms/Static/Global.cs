@@ -126,13 +126,13 @@ namespace SwitchWinForms
                 Image newImg = boxInfo.BackgroundImage;
                 if (boxInfo.ReplaceImageColor.Count > 0)
                 {
-                    //we dont want to call MakeTransparent each roll, this
-                    //will cause jumping excuted mutliple times.
+                    //we don't want to call MakeTransparent each roll, this
+                    //will cause jumping executed multiple times.
                     foreach (ReplaceColor rc in boxInfo.ReplaceImageColor)
                         newImg = MakeTransparent(newImg, rc, rc.ImageColorTolerance);
                     
                     boxInfo.ReplaceImageColor = new List<ReplaceColor>();
-                    //This makes it perminate until next restart.
+                    //This makes it permanent until next restart.
                     
                     boxInfo.BackgroundImage = newImg;
                     boxInfo.BackgroundImageModified = true;
@@ -152,7 +152,7 @@ namespace SwitchWinForms
             SolidBrush bgColor = new SolidBrush(boxInfo.BackColor);
             FillRoundedRectangle(g, bgColor, boxInfo, boxInfo.Rectangle, false);
 
-            //if border, then draw border ontop of background.
+            //if border, then draw border on top of background.
             if (boxInfo.BorderSize > 0)
             {
                 for (int i = 0; i < boxInfo.BorderSize; i++)
@@ -193,7 +193,7 @@ namespace SwitchWinForms
                 if (boxInfo.Type == SWF_BOX_TYPE.TextBox && boxInfo.InputStart)
                 {
                     //We have to change the font to "Courier New", since I"m overlaying so I can add the * at the cursor spot. 
-                    //An asterisk can be a differnt size than a letter for example if not using a squared font letter.
+                    //An asterisk can be a different size than a letter for example if not using a squared font letter.
                     ft = new Font(DefaultTextFont, boxInfo.Font.Size, boxInfo.Font.Style, GraphicsUnit.Pixel);
                     int cursor = boxInfo.TextCursor;
                     string text;
@@ -249,7 +249,7 @@ namespace SwitchWinForms
             }
             catch
             {
-                throw new IOException("Invalid filetype.");
+                throw new IOException("Invalid file type.");
             }
 
             return retVal;
@@ -282,7 +282,7 @@ namespace SwitchWinForms
             }
             catch
             {
-                throw new IOException("Invalid filetype.");
+                throw new IOException("Invalid file type.");
             }
 
             return retVal;

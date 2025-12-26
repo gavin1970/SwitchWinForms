@@ -6,7 +6,7 @@ using System.Reflection;
 namespace SwitchWinForms
 {
     /// <summary>
-    /// Creating a custome Titlebar, this replaces your exists.  Do not use more that one instnace per project.
+    /// Creating a custom Titlebar, this replaces your exists.  Do not use more that one instance per project.
     /// </summary>
     public partial class SWFTitlebar : BoxMethods
     {
@@ -22,7 +22,7 @@ namespace SwitchWinForms
             if (frm.FormBorderStyle != FormBorderStyle.None)
                 frm.FormBorderStyle = FormBorderStyle.None;
             
-            //Ensure doublebuffered set on form.
+            //Ensure double buffered set on form.
             //This stops major flickering.
             SetDoubleBuffered(frm);
 

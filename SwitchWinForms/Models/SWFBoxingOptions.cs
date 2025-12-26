@@ -42,7 +42,7 @@ namespace SwitchWinForms
         /// </summary>
         public int RoundedRadius { get; set; } = 0;
         /// <summary>
-        /// Pixle size of the border for all 4 sides.
+        /// Pixel size of the border for all 4 sides.
         /// </summary>
         public int BorderSize { get; set; } = 2;
         /// <summary>
@@ -54,11 +54,11 @@ namespace SwitchWinForms
         /// </summary>
         public Point Location { get; set; } = new Point(0, 0);
         /// <summary>
-        /// Get or Set the Bounderies of the box.
+        /// Get or Set the Boundaries of the box.
         /// </summary>
         public Size Size { get; set; } = new Size(0, 0);
         /// <summary>
-        /// Get or Set the Location and Bounderies of the box.
+        /// Get or Set the Location and Boundaries of the box.
         /// </summary>
         public Rectangle Rectangle 
         {
@@ -107,7 +107,7 @@ namespace SwitchWinForms
         /// </summary>
         internal bool ButtonClicked { get; set; } = false;
         /// <summary>
-        /// Since everyting is painted on a form, mouse over icons and clicks need to ver reviewd based on zindex
+        /// Since everything is painted on a form, mouse over icons and clicks need to be reviewed based on zindex
         /// </summary>
         internal int ZIndex { get; set; } = 0;
     }

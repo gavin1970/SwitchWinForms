@@ -74,7 +74,7 @@ namespace SwitchWinForms
         public SWFBoxingOptions BoxingOptions { get { return SetBoxOptions; } }
 
         /// <summary>
-        /// Get bounderies for this object.
+        /// Get boundaries for this object.
         /// </summary>
         public Rectangle Rectangle { get { return BoxingLoc; } }
 

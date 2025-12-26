@@ -14,20 +14,20 @@ namespace SwitchWinForms
         private const int txtCursor = 10626;    //10070-❖   10626-⦂
         private int ucode = 0;
         /// <summary>
-        /// You can pass any unicode number and use 
+        /// You can pass any Unicode number and use 
         /// .ToString() to get the local string value.
         /// </summary>
         /// <param name="ucode"></param>
         public SWFUnicodeChars(int ucode) =>
             this.ucode = ucode;
         /// <summary>
-        /// Internal method to convert unicode to current culture string value.
+        /// Internal method to convert Unicode to current culture string value.
         /// </summary>
-        /// <param name="unicode"></param>
+        /// <param name="Unicode"></param>
         /// <returns></returns>
-        private static string MakeString(int unicode)
+        private static string MakeString(int Unicode)
         {
-            return ((char)unicode)
+            return ((char)Unicode)
                 .ToString(new CultureInfo(CultureInfo.CurrentCulture.Name));
         }
         /// <summary>
@@ -66,7 +66,7 @@ namespace SwitchWinForms
             get { return MakeString(close); }
         }
         /// <summary>
-        /// Converts the unicode value passed in to the curent culture string value.
+        /// Converts the Unicode value passed in to the current culture string value.
         /// </summary>
         public override string ToString()
         {

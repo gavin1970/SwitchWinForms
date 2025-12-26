@@ -16,7 +16,7 @@ namespace SwitchWinForms
         /// </summary>
         internal Form GetSetParent { get; set; }
         /// <summary>
-        /// titlebar is always location 0,0
+        /// Titlebar is always location 0,0
         /// </summary>
         internal Point Location { get; set; } = new Point(0, 0);
         /// <summary>
@@ -34,7 +34,7 @@ namespace SwitchWinForms
         public Rectangle Rectangle { get { return new Rectangle(this.Location, this.Size); } }
         /// <summary>
         /// Border size. 
-        ///     Valid alues (0-5).
+        ///     Valid values (0-5).
         ///     Default: 2
         /// </summary>
         public int BorderSize
@@ -219,7 +219,7 @@ namespace SwitchWinForms
             /// </summary>
             public int BorderSize { get; set; } = 1;
             /// <summary>
-            /// Seperations between buttons.
+            /// Separations between buttons.
             /// Default: 2
             /// </summary>
             public int MarginRight { get; set; } = 2;

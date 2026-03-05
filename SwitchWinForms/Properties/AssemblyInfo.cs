@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("chizl.com")]
 [assembly: AssemblyProduct("SwitchWinForms")]
-[assembly: AssemblyCopyright("© 2025 chizl.com")]
+[assembly: AssemblyCopyright("© 2026 chizl.com")]
 [assembly: AssemblyTrademark("chizl.com ™")]
 [assembly: AssemblyCulture("")]
 
@@ -32,8 +32,8 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("5.11.0.0")]
-[assembly: AssemblyFileVersion("5.11.4.790")]
-[assembly: AssemblyInformationalVersion("5.11.4.0")]
+[assembly: AssemblyVersion("6.3.0.0")]
+[assembly: AssemblyFileVersion("6.3.5.1323")]
+[assembly: AssemblyInformationalVersion("6.3.5.0")]
 [assembly: AssemblyKeyFileAttribute("")]
 [assembly: AssemblyDelaySignAttribute(false)]

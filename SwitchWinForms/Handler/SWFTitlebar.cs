@@ -26,7 +26,7 @@ namespace SwitchWinForms
             //This stops major flickering.
             SetDoubleBuffered(frm);
 
-            frm.BackColor = Color.FromArgb(192, 0, 191);
+            frm.BackColor = Color.FromArgb(0, 1, 2);
             frm.TransparencyKey = frm.BackColor;
 
             if (frm.MinimumSize.Width == 0 &&
